@@ -59,7 +59,7 @@ Connection: close\r\n
 Response in Details:
 First line example: HTTP/1.0 200 OK\r\n
 Protocol is always HTTP/1.0.
-The header "server" contains the server name and it should be webserver/1.0.
+The header "server" contains the server name and it would be webserver/1.0.
 In order to construct the date, I use:
  #define RFC1123FMT "%a, %d %b %Y %H:%M:%S GMT"
  time_t now;
@@ -68,7 +68,7 @@ In order to construct the date, I use:
  strftime(timebuf, sizeof(timebuf), RFC1123FMT, gmtime(&now));
  //timebuf holds the correct format of the current time.
 Location is the new location in case of header 302. In other words, the requested path + "/".
-Content type is the mime type of the response body. You can use the following function:
+Content type is the mime type of the response body. I use the following function:
 char *get_mime_type(char *name)
 {
  char *ext = strrchr(name, '.');
