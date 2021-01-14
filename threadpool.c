@@ -1,4 +1,4 @@
-//Lior Sapir I.D. 304916562
+//Lior Sapir 
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
